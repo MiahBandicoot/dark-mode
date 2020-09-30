@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
+
+
+
 
 const Navbar = (props) => {
   const toggleMode = e => {
@@ -19,3 +22,24 @@ const Navbar = (props) => {
 };
 
 export default Navbar;
+
+// const Navbar = (props) => {
+//   const [darkMode, setDarkMode] = useDarkMode()
+//   const toggleMode = e => {
+//     e.preventDefault();
+//    setDarkMode(!darkMode);
+//   };
+//   return (
+//     <nav className="navbar">
+//       <h1>Crypto Tracker</h1>
+//       <div className="dark-mode__toggle">
+//         <div
+//           onClick={toggleMode}
+//           className={props.darkMode ? 'toggle toggled' : 'toggle'}
+//         />
+//       </div>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
